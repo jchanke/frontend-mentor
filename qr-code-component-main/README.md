@@ -8,6 +8,7 @@ Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 - [Frontend Mentor - QR code component](#frontend-mentor---qr-code-component)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [Link](#link)
     - [Screenshot](#screenshot)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -16,6 +17,11 @@ Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
   - [Author](#author)
 
 ## Overview
+
+### Link
+
+You can preview the page
+[here](https://jchanke.github.io/frontend-mentor/qr-code-component-main).
 
 ### Screenshot
 
