@@ -1,0 +1,111 @@
+:root {
+  --page-bg: hsl(47, 88%, 63%);
+  --card-bg: hsl(0, 0%, 100%);
+  --card-title: hsl(0, 0%, 7%);
+  --card-desc: hsl(0, 0%, 42%);
+  --mobile: 375px;
+}
+
+body {
+  background-color: var(--page-bg);
+  font-family: "Figtree", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: var(--mobile);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  /* Visual properties */
+  background-color: var(--card-bg);
+  border: 1.5px solid black;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 0 black;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 1.5em;
+  gap: 1.25em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.blog-metadata {
+  font-size: 0.9em;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.blog-labels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.label {
+  background-color: var(--page-bg);
+  font-weight: 700;
+  padding: 0.4em 0.7em;
+  border-radius: 0.25em;
+}
+
+h2.blog-title {
+  margin: 0;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+h2.blog-title:hover {
+  color: var(--page-bg);
+}
+
+.blog-summary {
+  color: var(--card-desc);
+  line-height: 1.5em;
+}
+
+.blog-author {
+  /* Visual properties */
+  font-weight: 700;
+  font-size: 0.9em;
+
+  /* Layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.blog-author img {
+  height: 2em;
+  width: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
