@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Style */
+  --page-bg: hsl(0, 0%, 8%);
+  --card-bg: hsl(0, 0%, 12%);
+  --card-button: hsl(0, 0%, 20%);
+  --card-name: hsl(0, 0%, 100%);
+  --card-location: hsl(75, 94%, 57%);
+
+  /* Breakpoints */
+  --mobile: 375px;
+}
+
+body {
+  /* Visual appearance */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--card-name);
+  background-color: var(--page-bg);
+
+  /* Layout */
+  margin: 0; /* remove 8px margin above and below */
+}
+
+.container {
+  min-height: 100vh;
+  max-width: var(--mobile);
+  margin: 0 auto;
+  padding: 0 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  /* Visual appearance */
+  background-color: var(--card-bg);
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 3em;
+  width: 100%;
+
+  /* Layout */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+img.card-avatar {
+  border-radius: 50%;
+  height: 6em;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-name {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-location {
+  color: var(--card-location);
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+}
+
+.link-button {
+  /* Visual appearance */
+  background-color: var(--card-button);
+  color: var(--card-name);
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.75em;
+  padding: 1em;
+
+  &:hover {
+    background-color: var(--card-location);
+    color: var(--card-bg);
+    cursor: pointer;
+    box-shadow: 0px 0px 16px var(--card-location);
+  }
+
+  &:focus {
+    outline: none; /* disable default behavior */
+    box-shadow: 0px 0px 8px var(--card-location);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
