@@ -1,0 +1,60 @@
+:root {
+  /* Colors */
+  --page-bg: hsl(212, 45%, 89%);
+  --card-bg: white;
+  --card-title: hsl(218, 44%, 22%);
+  --card-desc: hsl(216, 15%, 48%);
+
+  /* Breakpoints */
+  --mobile: 375px;
+}
+
+body {
+  background-color: var(--page-bg);
+  font-size: 15px;
+  font-family: "Outfit";
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.container {
+  min-height: 100vh; /* 100% of the viewport height */
+  max-width: var(--mobile); /* expand up to mobile size */
+  margin: 0 auto; /* top-bottom margin = 0; left-right margin equal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* Display style */
+  margin: 1em;
+  background-color: var(--card-bg);
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25); /* hsl with alpha = 0.25 */
+
+  /* Flex container for children */
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.75em;
+}
+
+.card .title {
+  margin: 0 1em;
+  color: var(--card-title);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card .desc {
+  margin: 0 2em 2em 2em;
+  color: var(--card-desc);
+}
